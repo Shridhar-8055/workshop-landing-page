@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/thankyou", "destination": "/thankyou.html" },
+    { "source": "/course-thankyou", "destination": "/course-thankyou.html" }
+  ]
+}

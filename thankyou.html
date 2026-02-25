@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Confirmed - AI Algo Trading Workshop | Quantum Algo</title>
+  <meta name="description" content="Your workshop registration is confirmed. See you Saturday, March 1st at 2:00 PM IST.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="workshop.css">
+  <style>
+    .ty-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+    .ty-main {
+      flex: 1;
+      padding: 60px 0 80px;
+    }
+    .ty-success-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(0, 82, 183, 0.15);
+      border: 3px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      margin: 0 auto 24px;
+      box-shadow: 0 0 30px rgba(0, 82, 183, 0.3);
+    }
+    .ty-heading {
+      font-family: 'Clash Display', 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .ty-subheading {
+      font-size: 1.05rem;
+      color: var(--primary);
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    .ty-details-card {
+      background: var(--bg-alt);
+      border: 2px solid var(--primary);
+      border-radius: 16px;
+      max-width: 600px;
+      margin: 0 auto 48px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0, 82, 183, 0.15);
+    }
+    .ty-details-card h3 {
+      font-family: 'Clash Display', 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .ty-detail-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .ty-detail-row:last-child {
+      border-bottom: none;
+    }
+    .ty-detail-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 82, 183, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .ty-detail-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+    .ty-detail-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .ty-section-title {
+      font-family: 'Clash Display', 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .ty-steps {
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+    .ty-step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 16px 0;
+      position: relative;
+    }
+    .ty-step + .ty-step {
+      border-top: 1px solid var(--border);
+    }
+    .ty-step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    .ty-step-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .ty-step-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .ty-checklist {
+      max-width: 600px;
+      margin: 0 auto 48px;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+    }
+    .ty-checklist h3 {
+      font-family: 'Clash Display', 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .ty-check-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      font-size: 0.92rem;
+      color: var(--text-light);
+    }
+    .ty-check-item + .ty-check-item {
+      border-top: 1px solid var(--border);
+    }
+    .ty-check-box {
+      width: 22px;
+      height: 22px;
+      border-radius: 4px;
+      border: 2px solid rgba(255,255,255,0.15);
+      flex-shrink: 0;
+    }
+    .ty-support {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .ty-support p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .ty-support a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .ty-support a:hover {
+      color: var(--primary-dim);
+    }
+
+    @media (max-width: 768px) {
+      .ty-main { padding: 32px 0 48px; }
+      .ty-heading { font-size: 1.5rem; }
+      .ty-subheading { font-size: 0.92rem; margin-bottom: 28px; }
+      .ty-details-card { padding: 24px 20px; margin-bottom: 36px; }
+      .ty-section-title { font-size: 1.25rem; margin-bottom: 24px; }
+      .ty-checklist { padding: 20px; }
+      .ty-success-icon { width: 64px; height: 64px; font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+
+  <div class="ty-wrapper">
+
+    <!-- Header -->
+    <header class="header" style="padding:16px 0;">
+      <div class="container header-inner">
+        <a href="/" class="logo">
+          <img src="QA logo.png" alt="Quantum Algo" class="logo-img">
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="ty-main">
+      <div class="container">
+
+        <!-- Success Icon & Greeting -->
+        <div class="ty-success-icon">&#10003;</div>
+        <h1 class="ty-heading" id="tyGreeting">Payment Confirmed!</h1>
+        <p class="ty-subheading">You're officially registered for the AI Algo Trading Workshop</p>
+
+        <!-- Workshop Details Card -->
+        <div class="ty-details-card">
+          <h3>Your Workshop Details</h3>
+          <div class="ty-detail-row">
+            <div class="ty-detail-icon">&#128197;</div>
+            <div>
+              <div class="ty-detail-label">Date</div>
+              <div class="ty-detail-value">Saturday, March 1st, 2026</div>
+            </div>
+          </div>
+          <div class="ty-detail-row">
+            <div class="ty-detail-icon">&#128336;</div>
+            <div>
+              <div class="ty-detail-label">Time</div>
+              <div class="ty-detail-value">2:00 PM - 6:00 PM IST</div>
+            </div>
+          </div>
+          <div class="ty-detail-row">
+            <div class="ty-detail-icon">&#128187;</div>
+            <div>
+              <div class="ty-detail-label">Format</div>
+              <div class="ty-detail-value">Live Online Workshop</div>
+            </div>
+          </div>
+          <div class="ty-detail-row">
+            <div class="ty-detail-icon">&#128176;</div>
+            <div>
+              <div class="ty-detail-label">Amount Paid</div>
+              <div class="ty-detail-value" style="color:var(--primary);">&#8377;4,000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- What Happens Next -->
+        <h2 class="ty-section-title">What Happens Next</h2>
+        <div class="ty-steps">
+          <div class="ty-step">
+            <div class="ty-step-num">1</div>
+            <div>
+              <div class="ty-step-title">Check your email</div>
+              <div class="ty-step-desc">You'll receive a confirmation email with workshop details within the next few minutes.</div>
+            </div>
+          </div>
+          <div class="ty-step">
+            <div class="ty-step-num">2</div>
+            <div>
+              <div class="ty-step-title">Join the WhatsApp group</div>
+              <div class="ty-step-desc">We'll send you an invite link via WhatsApp for workshop updates and reminders.</div>
+            </div>
+          </div>
+          <div class="ty-step">
+            <div class="ty-step-num">3</div>
+            <div>
+              <div class="ty-step-title">Setup instructions (Friday)</div>
+              <div class="ty-step-desc">24 hours before the workshop, you'll receive detailed setup instructions via email.</div>
+            </div>
+          </div>
+          <div class="ty-step">
+            <div class="ty-step-num">4</div>
+            <div>
+              <div class="ty-step-title">Reminder (Saturday morning)</div>
+              <div class="ty-step-desc">We'll send a reminder with the Zoom link on Saturday morning so you're all set.</div>
+            </div>
+          </div>
+          <div class="ty-step">
+            <div class="ty-step-num">5</div>
+            <div>
+              <div class="ty-step-title">Join at 2:00 PM IST</div>
+              <div class="ty-step-desc">Click the Zoom link, grab your laptop, and get ready to build 3 trading algos live!</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prepare Before Saturday -->
+        <div class="ty-checklist">
+          <h3>Prepare Before Saturday</h3>
+          <div class="ty-check-item">
+            <div class="ty-check-box"></div>
+            <span>Download and install <strong>MetaTrader 5</strong> (free) on your laptop/desktop</span>
+          </div>
+          <div class="ty-check-item">
+            <div class="ty-check-box"></div>
+            <span>Create a free <strong>AI account</strong> (ChatGPT, Claude, or similar)</span>
+          </div>
+          <div class="ty-check-item">
+            <div class="ty-check-box"></div>
+            <span>Use a <strong>laptop or desktop</strong> (not mobile) for the workshop</span>
+          </div>
+          <div class="ty-check-item">
+            <div class="ty-check-box"></div>
+            <span>Ensure you have a <strong>stable internet connection</strong></span>
+          </div>
+        </div>
+
+        <!-- Back to Home -->
+        <div style="text-align:center; margin-bottom:32px;">
+          <a href="/" class="cta-btn" style="display:inline-block; text-align:center;">BACK TO HOME</a>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="ty-support">
+          <p>Questions? Need help with setup?</p>
+          <a href="mailto:support@quantumalgo.in">support@quantumalgo.in</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-brand">QUANTUM ALGO</div>
+      <div class="footer-links">
+        <a href="#" onclick="document.getElementById('privacyModal').style.display='flex';return false;">Privacy Policy</a>
+        <a href="#" onclick="document.getElementById('termsModal').style.display='flex';return false;">Terms & Conditions</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Quantum Algo. All rights reserved.</div>
+      <div class="footer-disclaimer">DISCLAIMER: Trading involves risk. Past performance does not guarantee future results. We provide education, not investment advice.</div>
+    </footer>
+
+  </div>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacyModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;padding:20px;">
+    <div style="background:#111;border:1px solid #222;border-radius:12px;max-width:800px;width:100%;max-height:90vh;overflow-y:auto;padding:40px;position:relative;color:#d1d5dc;font-size:15px;line-height:1.8;">
+      <button onclick="document.getElementById('privacyModal').style.display='none'" style="position:sticky;top:0;float:right;background:#222;border:1px solid #333;color:#fff;font-size:20px;cursor:pointer;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;z-index:1;">&times;</button>
+      <h2 style="color:#fff;font-size:24px;margin-bottom:8px;">Privacy Policy</h2>
+      <p style="color:#99a1af;font-size:13px;margin-bottom:32px;">Last updated: February 24, 2026</p>
+      <p>For our full privacy policy, please visit the <a href="/workshop" style="color:#0052B7;">workshop page</a>.</p>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
+  <div id="termsModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;padding:20px;">
+    <div style="background:#111;border:1px solid #222;border-radius:12px;max-width:800px;width:100%;max-height:90vh;overflow-y:auto;padding:40px;position:relative;color:#d1d5dc;font-size:15px;line-height:1.8;">
+      <button onclick="document.getElementById('termsModal').style.display='none'" style="position:sticky;top:0;float:right;background:#222;border:1px solid #333;color:#fff;font-size:20px;cursor:pointer;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;z-index:1;">&times;</button>
+      <h2 style="color:#fff;font-size:24px;margin-bottom:8px;">Terms &amp; Conditions</h2>
+      <p style="color:#99a1af;font-size:13px;margin-bottom:32px;">Last updated: February 24, 2026</p>
+      <p>For our full terms & conditions, please visit the <a href="/workshop" style="color:#0052B7;">workshop page</a>.</p>
+    </div>
+  </div>
+
+  <script>
+    // Personalized greeting from URL param
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var name = params.get('name');
+      if (name) {
+        document.getElementById('tyGreeting').textContent = name + ', Payment Confirmed!';
+      }
+    })();
+
+    // Close modals on backdrop click
+    ['privacyModal', 'termsModal'].forEach(function(id) {
+      document.getElementById(id).addEventListener('click', function(e) {
+        if (e.target === this) this.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Algo Trading Workshop - Build 3 Trading Algos in 4 Hours (Live)</title>
+  <meta name="description" content="Hands-on 4-hour workshop. Build 3 complete Expert Advisors using AI. Learn backtesting, VPS deployment, monetization. Only ₹4,000.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="workshop.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement">
+    ⚡ NEXT WORKSHOP: This Saturday, March 1st at 2:00 PM IST <span class="spots">Only 23 Spots Left</span>
+  </div>
+
+  <!-- Hero (includes header) -->
+  <section class="hero">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="#" class="logo">
+          <img src="QA logo.png" alt="Quantum Algo" class="logo-img">
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <span class="hero-badge">LIVE HANDS-ON WORKSHOP</span>
+      <h1>Build <span>3 Profitable Trading Algos</span> in 4 Hours</h1>
+      <p class="hero-sub">Live Workshop: Learn to create Expert Advisors using AI—then build 3 complete EAs together, backtest them, and deploy to VPS. Walk away with working bots running 24/7.</p>
+
+      <div class="video-placeholder">
+        <div class="play-btn">▶</div>
+        <p>Watch: How I Build 3 Trading Algos Live in 4 Hours</p>
+      </div>
+
+      <div class="workshop-details">
+        <div class="wd-item">
+          <div class="wd-icon">📅</div>
+          <div><div class="wd-label">Date</div><div class="wd-value">This Saturday, March 1st, 2026</div></div>
+        </div>
+        <div class="wd-item">
+          <div class="wd-icon">🕐</div>
+          <div><div class="wd-label">Time</div><div class="wd-value">2:00 PM - 6:00 PM IST</div></div>
+        </div>
+        <div class="wd-item">
+          <div class="wd-icon">💻</div>
+          <div><div class="wd-label">Format</div><div class="wd-value">Live on Zoom</div></div>
+        </div>
+        <div class="wd-item">
+          <div class="wd-icon">👥</div>
+          <div><div class="wd-label">Capacity</div><div class="wd-value">Limited to 50 Students</div></div>
+        </div>
+      </div>
+
+      <div class="price-box">
+        <div class="price-original">₹9,999</div>
+        <div class="price-current">₹4,000 <span class="price-discount">60% OFF</span></div>
+        <div style="font-size:0.85rem; color:#6B7280; margin-top:8px;">Early Bird Price</div>
+        <div class="countdown" id="heroCountdown"></div>
+      </div>
+      <br>
+      <a href="#register" class="cta-btn">RESERVE MY SPOT - ₹4,000</a>
+
+      <div class="trust-items">
+        <span class="trust-item">✓ <strong>347</strong> students trained last month</span>
+        <span class="trust-item">✓ <strong>4.9/5</strong> rating from past attendees</span>
+        <span class="trust-item">✓ <strong>100%</strong> hands-on (build 3 EAs live)</span>
+      </div>
+      <div class="urgency-text">⚠️ Only 23 spots left &bull; Last workshop sold out in 6 hours</div>
+    </div>
+  </section>
+
+  <!-- What You'll Build -->
+  <section class="section section-alt fade-in">
+    <div class="container">
+      <h2 class="section-title">You'll Build 3 Complete Expert Advisors (Together, Live)</h2>
+      <p class="section-sub">Not theory. Not slides. Actual hands-on building.</p>
+      <div class="ea-cards">
+        <div class="ea-card">
+          <span class="ea-num">EA #1</span>
+          <h3>📈 Nifty 50 Opening Range Breakout EA</h3>
+          <div class="ea-meta"><span>Indian Markets</span><span>Breakout</span><span class="beginner">Beginner-friendly</span></div>
+          <p>Trade the first 15-minute range on Nifty 50. Build from scratch using AI, backtest on 1 year of data, optimize and deploy.</p>
+          <ul>
+            <li>Describe trading rules in plain English</li>
+            <li>Exact prompt structure for clean code</li>
+            <li>Backtesting on real data</li>
+            <li>Reading backtest reports</li>
+          </ul>
+          <p style="margin-top:12px; font-size:0.8rem; color:#9CA3AF;">⏱ 60 minutes</p>
+        </div>
+        <div class="ea-card">
+          <span class="ea-num">EA #2</span>
+          <h3>₿ Bitcoin RSI Mean Reversion Bot</h3>
+          <div class="ea-meta"><span>Crypto</span><span>Mean Reversion</span><span class="intermediate">Intermediate</span></div>
+          <p>Buy BTC when oversold, sell when overbought. Build for MT5, add risk management, set up alerts, test multiple timeframes.</p>
+          <ul>
+            <li>Multi-platform EA building</li>
+            <li>Advanced risk management (trailing stops)</li>
+            <li>Iterative prompting techniques</li>
+            <li>Parameter optimization</li>
+          </ul>
+          <p style="margin-top:12px; font-size:0.8rem; color:#9CA3AF;">⏱ 75 minutes</p>
+        </div>
+        <div class="ea-card">
+          <span class="ea-num">EA #3</span>
+          <h3>🎯 Your Custom Strategy EA</h3>
+          <div class="ea-meta"><span>You Choose</span><span>Your Strategy</span><span class="all-levels">All Levels</span></div>
+          <p>Bring your own trading strategy. We'll build it together. If you don't have one, I'll help you design a profitable one on the spot.</p>
+          <ul>
+            <li>Convert ANY strategy into an EA</li>
+            <li>Debug common errors fast</li>
+            <li>VPS deployment (24/7 automation)</li>
+            <li>Monitoring and alerts setup</li>
+          </ul>
+          <p style="margin-top:12px; font-size:0.8rem; color:#9CA3AF;">⏱ 90 minutes</p>
+        </div>
+      </div>
+      <div class="build-summary">By the end: You'll have 3 working EAs running on demo or live accounts. You'll know exactly how to build more on your own.</div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">4-Hour Workshop Breakdown</h2>
+      <p class="section-sub">2:00 PM - 6:00 PM IST</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot">👋</div>
+          <div class="tl-content">
+            <div class="tl-time">2:00 PM - 2:15 PM (15 min)</div>
+            <h4>Welcome & Setup Check</h4>
+            <p>Introductions, make sure everyone has MT5/AI ready, overview of what we'll build</p>
+          </div>
+        </div>
+        <div class="tl-item hands-on">
+          <div class="tl-dot">📈</div>
+          <div class="tl-content">
+            <div class="tl-time">2:15 PM - 3:15 PM (60 min)</div>
+            <h4>Build EA #1: Nifty Opening Range Breakout <span class="tl-tag live">HANDS-ON</span></h4>
+            <p>Live build from scratch. Generate code, compile in MT5, backtest, analyze results.</p>
+          </div>
+        </div>
+        <div class="tl-item break">
+          <div class="tl-dot">☕</div>
+          <div class="tl-content">
+            <div class="tl-time">3:15 PM - 3:30 PM (15 min)</div>
+            <h4>Break + Q&A <span class="tl-tag brk">BREAK</span></h4>
+            <p>Coffee break. Ask questions about EA #1. Troubleshoot issues.</p>
+          </div>
+        </div>
+        <div class="tl-item hands-on">
+          <div class="tl-dot">₿</div>
+          <div class="tl-content">
+            <div class="tl-time">3:30 PM - 4:45 PM (75 min)</div>
+            <h4>Build EA #2: Bitcoin RSI Bot <span class="tl-tag live">HANDS-ON</span></h4>
+            <p>Advanced build with trailing stops, multi-timeframe logic, optimization.</p>
+          </div>
+        </div>
+        <div class="tl-item break">
+          <div class="tl-dot">☕</div>
+          <div class="tl-content">
+            <div class="tl-time">4:45 PM - 5:00 PM (15 min)</div>
+            <h4>Break + Q&A <span class="tl-tag brk">BREAK</span></h4>
+            <p>Quick break. Debug errors. Answer questions.</p>
+          </div>
+        </div>
+        <div class="tl-item hands-on">
+          <div class="tl-dot">🎯</div>
+          <div class="tl-content">
+            <div class="tl-time">5:00 PM - 6:00 PM (60 min)</div>
+            <h4>Build EA #3: Your Custom Strategy <span class="tl-tag live">HANDS-ON</span></h4>
+            <p>Build YOUR strategy. VPS deployment walkthrough, monitoring setup.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">🎓</div>
+          <div class="tl-content">
+            <div class="tl-time">6:00 PM - 6:15 PM (15 min)</div>
+            <h4>Next Steps + Special Offer</h4>
+            <p>Recap, celebrate what you built, Q&A, and next steps for those interested.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bonuses -->
+  <section class="section section-alt fade-in">
+    <div class="container">
+      <h2 class="section-title">What's Included in Your ₹4,000 Workshop Ticket</h2>
+      <div class="bonuses-grid">
+        <div class="bonus-card">
+          <div class="bonus-icon">🎓</div>
+          <div class="bonus-info"><h4>4-Hour Live Training</h4><span class="bonus-val">₹9,999</span><p>Complete hands-on workshop with me</p></div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-icon">🎥</div>
+          <div class="bonus-info"><h4>Recording Access (7 Days)</h4><span class="bonus-val">₹2,000</span><p>Rewatch the session, catch what you missed</p></div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-icon">📖</div>
+          <div class="bonus-info"><h4>10 Ready-to-Use EA Prompts</h4><span class="bonus-val">₹4,970</span><p>Copy-paste prompts for 10 strategies</p></div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-icon">✅</div>
+          <div class="bonus-info"><h4>Backtesting Checklist (PDF)</h4><span class="bonus-val">₹500</span><p>Step-by-step guide to proper EA testing</p></div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-icon">💬</div>
+          <div class="bonus-info"><h4>7-Day Email Support</h4><span class="bonus-val">₹2,000</span><p>Ask me questions via email for 1 week</p></div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-icon">👥</div>
+          <div class="bonus-info"><h4>Private Workshop Alumni Group</h4><span class="bonus-val">₹1,500</span><p>Network with other attendees</p></div>
+        </div>
+      </div>
+      <div class="total-value-box">
+        <div class="tv-original">Total Value: ₹20,969</div>
+        <div class="tv-price">₹4,000</div>
+        <div class="tv-discount">You Save ₹16,969 (81% OFF)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Is This For -->
+  <section class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">Is This Workshop Right for You?</h2>
+      <div class="who-grid">
+        <div class="who-col perfect">
+          <h3>✅ This Workshop is PERFECT if you:</h3>
+          <ul>
+            <li>Want to learn algo trading but don't know where to start</li>
+            <li>Are tired of losing money with manual trading</li>
+            <li>Thought algo trading was "too technical"</li>
+            <li>Want to see if AI can ACTUALLY build EAs</li>
+            <li>Need a profitable side income (₹10K-50K/month)</li>
+            <li>Are a trader wanting to automate your strategy</li>
+            <li>Learn best by DOING, not just watching</li>
+          </ul>
+        </div>
+        <div class="who-col not-for">
+          <h3>❌ This is NOT for you if:</h3>
+          <ul>
+            <li>You're looking for a get-rich-quick scheme</li>
+            <li>You won't attend the FULL 4 hours</li>
+            <li>You're not willing to implement what you learn</li>
+            <li>You expect me to build EAs FOR you</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructor -->
+  <section class="section section-alt fade-in">
+    <div class="container">
+      <h2 class="section-title">Who's Teaching This Workshop?</h2>
+      <div class="instructor-card">
+        <div class="instructor-avatar">SH</div>
+        <div class="instructor-info">
+          <h3>Shamique Hussain</h3>
+          <div class="instructor-title">AI Algo Trading Expert</div>
+          <p>I'm not a programmer. I'm a trader who got tired of coding EAs the hard way. When AI tools like AI emerged, I saw the opportunity. I spent 6 months perfecting the method. Now I've taught 5,000+ people how to build EAs using AI. Zero coding required.</p>
+          <div class="instructor-stats">
+            <div><div class="stat-num">100+</div><div class="stat-label">EAs Built</div></div>
+            <div><div class="stat-num">5,000+</div><div class="stat-label">Students</div></div>
+            <div><div class="stat-num">4.9/5</div><div class="stat-label">Rating</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section fade-in">
+    <div class="container">
+      <h2 class="section-title">What Past Workshop Attendees Say</h2>
+      <p class="section-sub">⭐⭐⭐⭐⭐ 4.9/5 Average Rating (347 Reviews)</p>
+      <div class="test-grid">
+        <div class="test-card">
+          <div class="test-stars">⭐⭐⭐⭐⭐</div>
+          <div class="test-headline">Built all 3 EAs. One is already profitable on demo.</div>
+          <blockquote>"I was skeptical. ₹4K seemed expensive for a workshop. But I built all 3 EAs during the session. Deployed one (the Nifty EA) to my demo account the next day. It's already up ₹12K in 2 weeks. Best ₹4K I've spent."</blockquote>
+          <div class="test-author">
+            <div class="test-avatar">RK</div>
+            <div><div class="test-name">Rajesh Kumar</div><div class="test-loc">Bengaluru &bull; 2 weeks ago</div><div class="test-verified">✓ Verified</div></div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">⭐⭐⭐⭐⭐</div>
+          <div class="test-headline">Zero coding background. Still built all 3.</div>
+          <blockquote>"I'm a marketing manager. I know NOTHING about coding. But Shamiq made it so simple. Just type the prompt, AI does the work. I built all 3 EAs and understood every step."</blockquote>
+          <div class="test-author">
+            <div class="test-avatar">PS</div>
+            <div><div class="test-name">Priya Sharma</div><div class="test-loc">Mumbai &bull; 3 weeks ago</div><div class="test-verified">✓ Verified</div></div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">⭐⭐⭐⭐⭐</div>
+          <div class="test-headline">Worth 10x the price. Hands-on format is perfect.</div>
+          <blockquote>"This workshop is the opposite of online courses—pure hands-on building. By the end, I had 3 working EAs. Then bought the full course and built 15 more. Now freelancing at ₹25K per EA."</blockquote>
+          <div class="test-author">
+            <div class="test-avatar">AP</div>
+            <div><div class="test-name">Amit Patel</div><div class="test-loc">Ahmedabad &bull; 1 month ago</div><div class="test-verified">✓ Verified</div></div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">⭐⭐⭐⭐⭐</div>
+          <div class="test-headline">Went from overwhelmed to confident in 4 hours.</div>
+          <blockquote>"The breakthrough moment was when my custom EA compiled without errors and passed backtesting. I literally screamed. My husband thought I won the lottery. Worth every rupee."</blockquote>
+          <div class="test-author">
+            <div class="test-avatar">NR</div>
+            <div><div class="test-name">Neha Reddy</div><div class="test-loc">Hyderabad &bull; 1 month ago</div><div class="test-verified">✓ Verified</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="test-highlights">
+        <div><div class="th-num">"Best ₹4K investment"</div><div class="th-label">mentioned 47 times</div></div>
+        <div><div class="th-num">89%</div><div class="th-label">build all 3 EAs</div></div>
+        <div><div class="th-num">68%</div><div class="th-label">upgrade to full course</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt fade-in">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-q">Do I need coding experience? <span class="icon">+</span></button><div class="faq-a"><p>No. 90% of workshop attendees have ZERO coding background. We use AI (AI) to generate code for us. You'll learn to write prompts, not code.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What do I need to bring/prepare? <span class="icon">+</span></button><div class="faq-a"><p>Laptop/desktop (not mobile), stable internet, MetaTrader 5 installed (free), AI account (free). I'll send setup instructions 24 hours before.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What if I can't attend the full 4 hours? <span class="icon">+</span></button><div class="faq-a"><p>You MUST attend the full session to get value. We build 3 EAs step-by-step. The recording is available for 7 days if you need to rewatch.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Is this live or pre-recorded? <span class="icon">+</span></button><div class="faq-a"><p>100% LIVE on Zoom. You build EAs together with me in real-time. Ask questions. Get help. This is NOT a webinar or video course.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Can I build EAs for any market? <span class="icon">+</span></button><div class="faq-a"><p>Yes. We'll build for Nifty (Indian stocks), Bitcoin (crypto), and you choose the 3rd (Forex, US stocks, commodities—your pick).</p></div></div>
+        <div class="faq-item"><button class="faq-q">Will the EAs be profitable? <span class="icon">+</span></button><div class="faq-a"><p>The EAs are based on proven strategies. However, past performance ≠ future results. You'll learn to backtest and optimize yourself.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What's the refund policy? <span class="icon">+</span></button><div class="faq-a"><p>No refunds (digital product). BUT: If you're not satisfied after attending the full 4 hours, I'll personally help you build 2 more EAs in a private session (free).</p></div></div>
+        <div class="faq-item"><button class="faq-q">Is there a recording? <span class="icon">+</span></button><div class="faq-a"><p>Yes. Recording available for 7 days. But PLEASE attend live—it's much better with real-time Q&A.</p></div></div>
+        <div class="faq-item"><button class="faq-q">How many people in the workshop? <span class="icon">+</span></button><div class="faq-a"><p>Maximum 50 students. Small enough for individual help, large enough for group energy.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What happens after the workshop? <span class="icon">+</span></button><div class="faq-a"><p>3 working EAs + 7 days email support + alumni group. 68% of attendees enroll in the full course for advanced strategies.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Workshop vs full course? <span class="icon">+</span></button><div class="faq-a"><p>Workshop: 4 hours, 3 EAs, ₹4K. Full Course: 20+ hours, 11 modules, 15+ EAs, AI assistant, app, community, signals, ₹19,999. Workshop is perfect for testing the method.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Can I upgrade to the full course later? <span class="icon">+</span></button><div class="faq-a"><p>Yes! Workshop attendees get a special discount on the full course. Details shared at the end of the workshop.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing / Register -->
+  <section class="section" id="register">
+    <div class="container">
+      <h2 class="section-title">Reserve Your Spot (Only 23 Left)</h2>
+      <p class="section-sub">⚠️ Workshop is Saturday, March 1st &bull; Last one sold out in 6 hours</p>
+      <div class="pricing-card">
+        <div class="pricing-header">Workshop This Saturday - All Inclusive</div>
+        <div class="pricing-body">
+          <div class="pricing-includes">
+            <li><span>4-Hour Live Workshop</span><span>₹9,999</span></li>
+            <li><span>Recording Access (7 Days)</span><span>₹2,000</span></li>
+            <li><span>10 EA Prompts Library</span><span>₹4,970</span></li>
+            <li><span>Backtesting Checklist</span><span>₹500</span></li>
+            <li><span>7-Day Email Support</span><span>₹2,000</span></li>
+            <li><span>Alumni Group Access</span><span>₹1,500</span></li>
+          </div>
+          <div class="pricing-total"><span>Total Value</span><span>₹20,969</span></div>
+          <div style="margin:20px 0;">
+            <div class="pf-label">Your Investment Today</div>
+            <div class="pf-price">₹4,000</div>
+            <div class="pf-discount">Save ₹16,969 (81% OFF)</div>
+          </div>
+          <a href="#register" class="cta-btn" style="display:block; text-align:center;">RESERVE MY SPOT - ₹4,000</a>
+          <div class="payment-badges" style="margin-top:20px;">
+            <span>🔒 256-bit SSL</span>
+            <span>✅ Powered by Razorpay</span>
+            <span>💳 Cards, UPI, Net Banking</span>
+          </div>
+          <div class="guarantee-box">
+            <h4>💯 My Personal Guarantee</h4>
+            <p>Attend the full 4 hours and build at least 1 working EA. If you're not completely satisfied, I'll personally help you build 2 more EAs in a private 1-on-1 session (free). — Shamique Hussain</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:32px;">
+        <h4 style="font-size:1.05rem; margin-bottom:16px;">What Happens After You Register:</h4>
+        <div class="steps-grid">
+          <div class="step"><div class="step-num">1</div><div class="step-text">Instant confirmation email with Zoom link</div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-text">Setup instructions sent 24 hours before</div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-text">Reminder emails + WhatsApp</div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-text">Join Saturday 2 PM and build your 3 EAs</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta fade-in">
+    <div class="container">
+      <h2>Don't Learn Algo Trading the Hard Way</h2>
+      <div class="comparison">
+        <div class="comp-col hard">
+          <h4>❌ The Hard Way:</h4>
+          <ul>
+            <li>Spend 6-12 months learning to code</li>
+            <li>Or hire a developer for ₹5-10 lakh per EA</li>
+            <li>Struggle with bugs and errors alone</li>
+            <li>Never know if your strategy actually works</li>
+            <li>Waste months on trial and error</li>
+          </ul>
+        </div>
+        <div class="comp-col easy">
+          <h4>✅ The Easy Way:</h4>
+          <ul>
+            <li>4 hours this Saturday</li>
+            <li>Build 3 working EAs with AI</li>
+            <li>Get help from an expert in real-time</li>
+            <li>Backtest and validate before trading</li>
+            <li>Walk away with working bots</li>
+          </ul>
+        </div>
+      </div>
+      <div class="final-stats">
+        <div class="fs-item"><div class="fs-num">⚡ 347</div><div class="fs-label">students trained last month</div></div>
+        <div class="fs-item"><div class="fs-num">⭐ 4.9/5</div><div class="fs-label">average workshop rating</div></div>
+        <div class="fs-item"><div class="fs-num">🎯 89%</div><div class="fs-label">build all 3 EAs</div></div>
+      </div>
+      <a href="#register" class="cta-btn" style="margin-bottom:12px;">YES, RESERVE MY SPOT - ₹4,000</a>
+      <div style="font-size:0.85rem; color:#9CA3AF; margin-top:8px;">Only 23 spots left for Saturday's workshop</div>
+      <div class="final-closing">See you Saturday,<br><strong style="color:#fff;">Shamique Hussain</strong></div>
+      <div class="final-ps">P.S. - Last workshop had a waitlist of 47 people who didn't get in. Don't be one of them. Register now while spots are available.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">QUANTUM ALGO</div>
+    <div class="footer-links">
+      <a href="#" onclick="document.getElementById('privacyModal').style.display='flex';return false;">Privacy Policy</a>
+      <a href="#" onclick="document.getElementById('termsModal').style.display='flex';return false;">Terms & Conditions</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Quantum Algo. All rights reserved.</div>
+    <div class="footer-disclaimer">DISCLAIMER: Trading involves risk. Past performance does not guarantee future results. We provide education, not investment advice.</div>
+  </footer>
+
+  <!-- Sticky Bar -->
+  <div class="sticky-bar" id="stickyBar">
+    <span class="sticky-price">🔥 Workshop This Saturday &bull; <strong>₹4,000</strong></span>
+    <a href="#register" class="cta-btn" style="padding:12px 32px; font-size:0.95rem;">Register Now</a>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="socialToast">
+    <span>👤</span>
+    <div id="toastText"><strong>Rajesh</strong> from Mumbai just registered</div>
+  </div>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacyModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;padding:20px;">
+    <div style="background:#111;border:1px solid #222;border-radius:12px;max-width:800px;width:100%;max-height:90vh;overflow-y:auto;padding:40px;position:relative;color:#d1d5dc;font-size:15px;line-height:1.8;">
+      <button onclick="document.getElementById('privacyModal').style.display='none'" style="position:sticky;top:0;float:right;background:#222;border:1px solid #333;color:#fff;font-size:20px;cursor:pointer;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;z-index:1;">&times;</button>
+      <h2 style="color:#fff;font-size:24px;margin-bottom:8px;">Privacy Policy</h2>
+      <p style="color:#99a1af;font-size:13px;margin-bottom:32px;">Last updated: February 24, 2026</p>
+      <p>Quantum Algo ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website, register for our workshops, or use our services.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">1. Information We Collect</h3>
+      <p>We collect the following personal information when you register for our workshops or services:</p>
+      <ul style="padding-left:24px;margin-bottom:12px;">
+        <li><strong>Name</strong> - Your first name to personalize our communications</li>
+        <li><strong>Email Address</strong> - To send workshop details, confirmation emails, and related updates</li>
+        <li><strong>WhatsApp Number</strong> - To send workshop links and important reminders</li>
+        <li><strong>Trading Experience Level</strong> - To tailor our training content to your needs</li>
+      </ul>
+      <p>We also automatically collect certain technical information including your IP address, browser type, and device information through standard web server logs.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">2. How We Use Your Information</h3>
+      <ul style="padding-left:24px;margin-bottom:12px;">
+        <li>To register you for our workshops and live training sessions</li>
+        <li>To send confirmation emails with meeting links and details</li>
+        <li>To send reminders about upcoming sessions via email or WhatsApp</li>
+        <li>To communicate updates about our courses, workshops, and educational content</li>
+        <li>To improve our services and tailor content to our audience</li>
+        <li>To respond to your inquiries and provide customer support</li>
+      </ul>
+      <h3 style="color:#fff;margin:28px 0 10px;">3. Data Storage and Security</h3>
+      <p>Your registration data is stored securely in Google Sheets and processed through Google Apps Script. We use industry-standard security measures to protect your personal information from unauthorized access, alteration, or destruction.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">4. Third-Party Services</h3>
+      <p>We use the following third-party services:</p>
+      <ul style="padding-left:24px;margin-bottom:12px;">
+        <li><strong>Google Workspace</strong> - For data storage, email sending, and workshop management</li>
+        <li><strong>Zoom</strong> - For hosting live workshop sessions</li>
+        <li><strong>Razorpay</strong> - For secure payment processing</li>
+        <li><strong>Vercel</strong> - For website hosting</li>
+      </ul>
+      <p>We do not sell, trade, or rent your personal information to any third parties.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">5. Email Communications</h3>
+      <p>By registering for our workshop, you consent to receiving confirmation emails, reminders, and follow-up emails with resources. You can opt out of promotional emails at any time by replying with "UNSUBSCRIBE" or contacting us directly.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">6. Your Rights</h3>
+      <ul style="padding-left:24px;margin-bottom:12px;">
+        <li><strong>Access</strong> - Request a copy of the personal data we hold about you</li>
+        <li><strong>Correction</strong> - Request correction of inaccurate personal data</li>
+        <li><strong>Deletion</strong> - Request deletion of your personal data from our records</li>
+        <li><strong>Opt-out</strong> - Unsubscribe from promotional communications at any time</li>
+      </ul>
+      <h3 style="color:#fff;margin:28px 0 10px;">7. Cookies</h3>
+      <p>Our website may use minimal cookies for basic functionality. We do not use tracking cookies or third-party advertising cookies.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">8. Children's Privacy</h3>
+      <p>Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">9. Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">10. Contact Us</h3>
+      <p><strong>Company:</strong> Quantum Algo<br><strong>Founder:</strong> Shamique Hussain<br><strong>Email:</strong> support@quantumalgo.in</p>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
+  <div id="termsModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;padding:20px;">
+    <div style="background:#111;border:1px solid #222;border-radius:12px;max-width:800px;width:100%;max-height:90vh;overflow-y:auto;padding:40px;position:relative;color:#d1d5dc;font-size:15px;line-height:1.8;">
+      <button onclick="document.getElementById('termsModal').style.display='none'" style="position:sticky;top:0;float:right;background:#222;border:1px solid #333;color:#fff;font-size:20px;cursor:pointer;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;z-index:1;">&times;</button>
+      <h2 style="color:#fff;font-size:24px;margin-bottom:8px;">Terms &amp; Conditions</h2>
+      <p style="color:#99a1af;font-size:13px;margin-bottom:32px;">Last updated: February 24, 2026</p>
+      <p>Welcome to Quantum Algo. By accessing our website, registering for our workshops, or using any of our services, you agree to be bound by these Terms &amp; Conditions.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">1. About Our Services</h3>
+      <p>Quantum Algo provides educational content related to algorithmic trading and AI-powered trading tools, including free and paid live training sessions, online courses and workshops, and educational resources about building Expert Advisors (EAs) using AI. Our services are strictly educational in nature. We do not provide investment advice, portfolio management, or financial advisory services.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">2. Eligibility</h3>
+      <p>By using our services, you confirm that you are at least 18 years of age, have the legal capacity to enter into these terms, and will provide accurate and truthful information when registering.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">3. Workshop Registration</h3>
+      <p>When you register for our workshop, you agree to provide accurate personal information, receive confirmation emails and reminders, not share the meeting link with unregistered individuals, and conduct yourself respectfully during live sessions.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">4. Intellectual Property</h3>
+      <p>All content provided through our workshops, courses, and website is the intellectual property of Quantum Algo and Shamique Hussain. You may not record, reproduce, redistribute, resell, or claim our content as your own.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">5. Trading &amp; Financial Disclaimer</h3>
+      <p><strong>IMPORTANT:</strong> Trading in financial markets involves substantial risk of loss and is not suitable for every investor. The content provided by Quantum Algo is for educational purposes only.</p>
+      <ul style="padding-left:24px;margin-bottom:12px;">
+        <li>We do NOT provide investment advice or recommend specific trades</li>
+        <li>Past performance does NOT guarantee future results</li>
+        <li>Any profit figures mentioned are for illustrative purposes only</li>
+        <li>You are solely responsible for your own trading decisions and any financial losses</li>
+        <li>Consult a qualified financial advisor before making investment decisions</li>
+      </ul>
+      <h3 style="color:#fff;margin:28px 0 10px;">6. No Guarantees</h3>
+      <p>We make no guarantees regarding specific financial outcomes, performance of any trading algorithm, accuracy of information, or uninterrupted access to our services. Results vary based on individual effort, market conditions, capital, and many other factors.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">7. Paid Services &amp; Refund Policy</h3>
+      <p>For paid courses and workshops: all fees are clearly stated before purchase. Refund requests must be made within 7 days of purchase. Refunds are not available once you have accessed more than 30% of the course content.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">8. User Conduct</h3>
+      <p>You agree not to provide false information, disrupt sessions, attempt unauthorized access, use our services for illegal purposes, or harass other participants or our team.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">9. Limitation of Liability</h3>
+      <p>To the fullest extent permitted by law, Quantum Algo shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or trading capital. Our total liability shall not exceed the amount you paid us in the 12 months preceding the claim, or INR 5,000, whichever is less.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">10. Governing Law</h3>
+      <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in India.</p>
+      <h3 style="color:#fff;margin:28px 0 10px;">11. Contact Us</h3>
+      <p><strong>Company:</strong> Quantum Algo<br><strong>Founder:</strong> Shamique Hussain<br><strong>Email:</strong> support@quantumalgo.in</p>
+    </div>
+  </div>
+
+  <!-- Registration Modal -->
+  <div id="registerModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;padding:20px;">
+    <div class="reg-modal">
+      <button class="reg-close" onclick="document.getElementById('registerModal').style.display='none'">&times;</button>
+      <h2>Reserve Your Workshop Spot</h2>
+      <div class="reg-details">
+        📅 Saturday, March 1st &bull; 🕐 2:00 PM - 6:00 PM IST &bull; 💰 ₹4,000
+      </div>
+      <form id="workshopForm" onsubmit="return handleWorkshopSubmit(event)">
+        <div class="reg-form-group">
+          <label>First Name *</label>
+          <input type="text" name="first_name" placeholder="Enter your first name" required autocomplete="given-name">
+        </div>
+        <div class="reg-form-group">
+          <label>Email Address *</label>
+          <input type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+        </div>
+        <div class="reg-form-group">
+          <label>WhatsApp Number *</label>
+          <input type="tel" name="phone" placeholder="+91 98765 43210" required autocomplete="tel">
+          <span class="reg-helper">We'll send the Zoom link here</span>
+        </div>
+        <div class="reg-form-group">
+          <label>Trading Experience (Optional)</label>
+          <select name="experience">
+            <option value="">Select...</option>
+            <option value="beginner">Complete Beginner</option>
+            <option value="some">Some Experience (&lt; 1 year)</option>
+            <option value="intermediate">Intermediate (1-3 years)</option>
+            <option value="advanced">Advanced (3+ years)</option>
+          </select>
+        </div>
+        <button type="submit" class="reg-submit">RESERVE MY SPOT - ₹4,000 &rarr;</button>
+      </form>
+      <p class="reg-privacy">🔒 Your information is safe. We hate spam too.</p>
+      <div class="reg-badges">
+        <span>🔒 256-bit SSL</span>
+        <span>✅ Powered by Razorpay</span>
+        <span>💳 Cards, UPI, Net Banking</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==============================
+    // CONFIGURATION — Replace with your keys
+    // ==============================
+    var RAZORPAY_KEY_ID = 'rzp_live_SKKgX5sZvc4yIc';
+    var WORKSHOP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxWnnLkFxkCuV_S2xwxLDI-x47AfeLBUVi0USrBRa6PTZnUnz9aFFXzxGZpKAyKGqg7/exec';
+
+    // Open Registration Modal
+    function openRegister(e) {
+      if (e) e.preventDefault();
+      document.getElementById('registerModal').style.display = 'flex';
+    }
+    // Close modal on backdrop click
+    document.getElementById('registerModal').addEventListener('click', function(e) {
+      if (e.target === this) this.style.display = 'none';
+    });
+    // Wire all register buttons
+    document.querySelectorAll('a[href="#register"], .cta-btn, .sticky-bar .cta-btn').forEach(function(btn) {
+      btn.addEventListener('click', openRegister);
+    });
+
+    // ==============================
+    // Razorpay Payment Flow
+    // ==============================
+    function handleWorkshopSubmit(e) {
+      e.preventDefault();
+      var form = document.getElementById('workshopForm');
+      var btn = form.querySelector('button[type="submit"]');
+      var data = {
+        first_name: form.first_name.value.trim(),
+        email: form.email.value.trim(),
+        phone: form.phone.value.trim(),
+        experience: form.experience.value
+      };
+
+      // Validation
+      if (!data.first_name || !data.email || !data.phone) {
+        alert('Please fill in all required fields.');
+        return false;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+        alert('Please enter a valid email address.');
+        return false;
+      }
+
+      var originalText = btn.innerHTML;
+      btn.innerHTML = 'Creating order...';
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+
+      // Step 1: Create Razorpay order via Apps Script
+      fetch(WORKSHOP_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify({
+          action: 'create_order',
+          first_name: data.first_name,
+          email: data.email,
+          phone: data.phone,
+          experience: data.experience
+        })
+      })
+      .then(function(res) { return res.json(); })
+      .then(function(result) {
+        if (!result.success || !result.order_id) {
+          throw new Error(result.error || 'Failed to create order');
+        }
+
+        btn.innerHTML = 'Processing...';
+
+        // Step 2: Open Razorpay checkout
+        var options = {
+          key: RAZORPAY_KEY_ID,
+          amount: result.amount, // in paise, from server
+          currency: 'INR',
+          name: 'Quantum Algo',
+          description: 'AI Algo Trading Workshop - March 1st',
+          order_id: result.order_id,
+          prefill: {
+            name: data.first_name,
+            email: data.email,
+            contact: data.phone
+          },
+          theme: {
+            color: '#0052B7'
+          },
+          handler: function(response) {
+            // Step 3: Verify payment via Apps Script
+            btn.innerHTML = 'Verifying payment...';
+            btn.disabled = true;
+            btn.style.opacity = '0.7';
+
+            fetch(WORKSHOP_SCRIPT_URL, {
+              method: 'POST',
+              body: JSON.stringify({
+                action: 'verify_payment',
+                razorpay_order_id: response.razorpay_order_id,
+                razorpay_payment_id: response.razorpay_payment_id,
+                razorpay_signature: response.razorpay_signature,
+                first_name: data.first_name,
+                email: data.email,
+                phone: data.phone,
+                experience: data.experience
+              })
+            })
+            .then(function(res) { return res.json(); })
+            .then(function(verifyResult) {
+              if (verifyResult.success) {
+                // Show success toast
+                var t = document.getElementById('socialToast');
+                document.getElementById('toastText').innerHTML = '✅ <strong>' + data.first_name + '</strong>, payment successful! Redirecting...';
+                t.classList.add('show');
+                form.reset();
+                document.getElementById('registerModal').style.display = 'none';
+
+                // Redirect to thank-you page
+                setTimeout(function() {
+                  window.location.href = '/thankyou.html?name=' + encodeURIComponent(data.first_name);
+                }, 1500);
+              } else {
+                throw new Error(verifyResult.error || 'Verification failed');
+              }
+            })
+            .catch(function(err) {
+              alert('Payment was received but verification failed. Please contact support@quantumalgo.in with your payment ID: ' + response.razorpay_payment_id);
+              btn.innerHTML = originalText;
+              btn.disabled = false;
+              btn.style.opacity = '1';
+            });
+          },
+          modal: {
+            ondismiss: function() {
+              btn.innerHTML = originalText;
+              btn.disabled = false;
+              btn.style.opacity = '1';
+            }
+          }
+        };
+
+        var rzp = new Razorpay(options);
+        rzp.on('payment.failed', function(response) {
+          alert('Payment failed: ' + response.error.description + '. Please try again.');
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+          btn.style.opacity = '1';
+        });
+        rzp.open();
+      })
+      .catch(function(err) {
+        alert('Could not create order. Please try again. (' + err.message + ')');
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        btn.style.opacity = '1';
+      });
+
+      return false;
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        document.querySelectorAll('.faq-item').forEach(i => { if (i !== item) i.classList.remove('active'); });
+        item.classList.toggle('active');
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Sticky bar on scroll
+    window.addEventListener('scroll', () => {
+      const bar = document.getElementById('stickyBar');
+      const scrollPct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      bar.classList.toggle('visible', scrollPct > 20);
+    });
+
+    // Countdown timer (48 hours from page load)
+    function startCountdown(elementId, hours) {
+      const el = document.getElementById(elementId);
+      if (!el) return;
+      let stored = localStorage.getItem('workshop_countdown_end');
+      if (!stored) { stored = Date.now() + hours * 3600000; localStorage.setItem('workshop_countdown_end', stored); }
+      const end = parseInt(stored);
+      function update() {
+        const diff = Math.max(0, end - Date.now());
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        el.innerHTML = `<div class="cd-unit"><div class="cd-num">${String(h).padStart(2,'0')}</div><div class="cd-label">Hours</div></div><div class="cd-unit"><div class="cd-num">${String(m).padStart(2,'0')}</div><div class="cd-label">Min</div></div><div class="cd-unit"><div class="cd-num">${String(s).padStart(2,'0')}</div><div class="cd-label">Sec</div></div>`;
+        if (diff > 0) requestAnimationFrame(() => setTimeout(update, 1000));
+      }
+      update();
+    }
+    startCountdown('heroCountdown', 48);
+
+    // Social Proof Toasts
+    const toasts = [
+      '<strong>Rajesh</strong> from Mumbai just registered',
+      '<strong>Priya</strong> from Bengaluru just registered',
+      '⚠️ Only <strong>23 spots</strong> remaining',
+      '<strong>Amit</strong> from Delhi just registered'
+    ];
+    let ti = 0;
+    function showToast() {
+      const t = document.getElementById('socialToast');
+      document.getElementById('toastText').innerHTML = toasts[ti];
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 4000);
+      ti = (ti + 1) % toasts.length;
+    }
+    setTimeout(() => { showToast(); setInterval(showToast, 12000); }, 8000);
+  </script>
+</body>
+</html>
