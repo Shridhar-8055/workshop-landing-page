@@ -797,22 +797,7 @@
     }
     startCountdown('heroCountdown', 48);
 
-    // Social Proof Toasts
-    const toasts = [
-      '<strong>Rajesh</strong> from Mumbai just registered',
-      '<strong>Priya</strong> from Bengaluru just registered',
-      '⚠️ Only <strong>23 spots</strong> remaining',
-      '<strong>Amit</strong> from Delhi just registered'
-    ];
-    let ti = 0;
-    function showToast() {
-      const t = document.getElementById('socialToast');
-      document.getElementById('toastText').innerHTML = toasts[ti];
-      t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 4000);
-      ti = (ti + 1) % toasts.length;
-    }
-    setTimeout(() => { showToast(); setInterval(showToast, 12000); }, 8000);
+    // Toast only shown on successful payment (triggered in payment handler)
   </script>
 </body>
 </html>
