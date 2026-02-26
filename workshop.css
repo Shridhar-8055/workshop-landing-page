@@ -332,11 +332,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-lg); padding: 24px;
   transition: all 0.3s;
 }
+.test-card { display: flex; flex-direction: column; }
 .test-card:hover { border-color: rgba(0,82,183,0.25); box-shadow: 0 0 30px rgba(0,82,183,0.08); }
 .test-stars { color: #FBBF24; margin-bottom: 8px; }
 .test-headline { font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; color: #fff; }
-.test-card blockquote { font-size: 0.88rem; color: var(--text-muted); font-style: italic; line-height: 1.6; margin-bottom: 12px; }
-.test-author { display: flex; align-items: center; gap: 10px; }
+.test-card blockquote { font-size: 0.88rem; color: var(--text-muted); font-style: italic; line-height: 1.6; margin-bottom: 12px; flex-grow: 1; }
+.test-author { display: flex; align-items: center; gap: 10px; margin-top: auto; }
 .test-avatar {
   width: 36px; height: 36px; border-radius: 50%;
   background: rgba(0,82,183,0.15); color: var(--primary);
